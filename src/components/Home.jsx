@@ -15,13 +15,13 @@ const Home = () => {
       {/* container */}
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         <div className="flex flex-col lg:flex-row lg:gap-4 text-4xl sm:text-6xl font-bold">
-          <h1 className="text-gray-300">Hi there, I am</h1>
-          <h1 className="text-purple-500">Aidan Rheeder</h1>
+          <h1 className="text-[#FFFFFF]">Hi there, I am</h1>
+          <h1 className="text-[#6C5DD3]">Aidan </h1>
         </div>
 
         <h2 className="text-4xl sm:text-6xl font-bold text-gray-400">
           I am a <span>{text}</span>
-          <Cursor cursorColor="rgb(169, 85, 247)"></Cursor>
+          <Cursor cursorColor="#6C5DD3"></Cursor>
         </h2>
         <p className="text-gray-400 py-4 max-w-[700px]">
           I am an agile React developer with a flair for crafting sleek, user-centric interfaces. Merging creativity
@@ -31,7 +31,7 @@ const Home = () => {
         </p>
         <div>
           <Link
-            className="text-white group border-2 px-6 py-3 my-2 max-w-fit flex items-center hover:bg-purple-500 hover:border-purple-500 duration-300 hover:cursor-pointer"
+            className="text-white group border-2 px-6 py-3 my-2 max-w-fit flex items-center hover:bg-[#6C5DD3] hover:border-[#6C5DD3] duration-300 hover:cursor-pointer"
             to="contact"
             smooth={true}
             duration={500}

@@ -8,37 +8,37 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-20 z-30 flex justify-between items-center px-4 bg-slate-800 text-gray-300">
+    <div className="fixed w-full h-20 z-30 flex justify-between items-center px-4 bg-[#1F2128] text-[#FFFFFF]">
       <div className="hover:cursor-pointer">
         <Link to="home" smooth={true} duration={500}>
-          <img src={AR} alt="Initials Logo" width="100px"></img>
+          <img src={AR} alt="Initials Logo" width="90px"></img>
         </Link>
       </div>
 
       {/* menu */}
 
       <ul className="hidden md:flex">
-        <li className="hover:text-purple-500 duration-300">
+        <li className="hover:text-[#6C5DD3] duration-300">
           <Link to="home" smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li className="hover:text-purple-500 duration-300">
+        <li className="hover:text-[#6C5DD3] duration-300">
           <Link to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li className="hover:text-purple-500 duration-300">
+        <li className="hover:text-[#6C5DD3] duration-300">
           <Link to="skills" smooth={true} duration={500}>
             Skills
           </Link>
         </li>
-        {/* <li className="hover:text-purple-500 duration-300">
+        {/* <li className="hover:text-[#6C5DD3] duration-300">
           <Link to="projects" smooth={true} duration={500}>
             Projects
           </Link>
         </li> */}
-        <li className="hover:text-purple-500 duration-300">
+        <li className="hover:text-[#6C5DD3] duration-300">
           <Link to="contact" smooth={true} duration={500}>
             Contact
           </Link>
@@ -55,7 +55,7 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-slate-800 flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 w-full h-screen bg-[#1F2128] flex flex-col justify-center items-center"
         }
       >
         <li className="py-6 text-4xl">
@@ -86,7 +86,7 @@ const Navbar = () => {
           {/* LinkedIn */}
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
             <a
-              className="flex justify-between items-center w-full text-gray-300"
+              className="flex justify-between items-center w-full text-[#FFFFFF]"
               href="//www.linkedin.com/in/aidan-rheeder-baa95126b"
               target="_blank"
               rel="noreferrer"
@@ -98,7 +98,7 @@ const Navbar = () => {
           {/* GitHub */}
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-700">
             <a
-              className="flex justify-between items-center w-full text-gray-300"
+              className="flex justify-between items-center w-full text-[#FFFFFF]"
               href="https://github.com/aidanr0206"
               target="_blank"
               rel="noreferrer"
@@ -110,7 +110,7 @@ const Navbar = () => {
           {/* Instagram */}
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#d62976]">
             <a
-              className="flex justify-between items-center w-full text-gray-300"
+              className="flex justify-between items-center w-full text-[#FFFFFF]"
               href="//www.instagram.com/aidan_rheeder/"
               target="_blank"
               rel="noreferrer"

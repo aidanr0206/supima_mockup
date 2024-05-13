@@ -7,9 +7,9 @@ import Skills from "./components/Skills";
 
 function App() {
   return (
-    <div className="bg-slate-800 snap-y snap-mandatory overflow-scroll">
+    <div className="bg-[#1F2128] snap-y snap-mandatory overflow-scroll">
       <Navbar></Navbar>
-      
+
       <section id="home" className="snap-center">
         <Home></Home>
       </section>
