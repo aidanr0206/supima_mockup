@@ -35,7 +35,7 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.2 }}
             viewport={{ once: true }}
-            className="space-y-2"
+            className="space-y-2 text-gray-400"
           >
             <p>
               I studied a BCIS in game design and development at Vega School in Johannesburg and have worked in the
