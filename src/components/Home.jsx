@@ -16,7 +16,7 @@ const Home = () => {
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         <div className="flex flex-col lg:flex-row lg:gap-4 text-4xl sm:text-6xl font-bold">
           <h1 className="text-[#FFFFFF]">Hi there, I am</h1>
-          <h1 className="text-[#6C5DD3]">Aidan </h1>
+          <h1 className="text-[#6C5DD3]">Aidan Rheeder</h1>
         </div>
 
         <h2 className="text-4xl sm:text-6xl font-bold text-gray-400">
