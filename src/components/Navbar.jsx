@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaGithub, FaInstagram, FaLinkedin, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
-import AR from "../assets/AR.png";
+import supimaLogo from "../assets/supimaLogo.png";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -11,7 +11,7 @@ const Navbar = () => {
     <div className="fixed w-full h-20 z-30 flex justify-between items-center px-4 bg-[#1F2128] text-[#FFFFFF]">
       <div className="hover:cursor-pointer">
         <Link to="home" smooth={true} duration={500}>
-          <img src={AR} alt="Initials Logo" width="90px"></img>
+          <img src={supimaLogo} alt="Initials Logo" width="90px"></img>
         </Link>
       </div>
 
