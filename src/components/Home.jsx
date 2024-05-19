@@ -5,29 +5,43 @@ import { Cursor, Typewriter, useTypewriter } from "react-simple-typewriter";
 
 const Home = () => {
   const [text, count] = useTypewriter({
-    words: ["Software Developer", "ReactJS Developer", "Front-End Developer"],
+    words: [
+      "IT Repairs",
+      "Internet Services",
+      "IT Support",
+      "Cloud Services",
+      "Network Cabling",
+      "IT Solutions",
+      "Power Solutions",
+      "IT Products",
+    ],
     loop: true,
-    delaySpeed: 2000,
+    delaySpeed: 1500,
   });
 
   return (
-    <div name="home" className="w-full h-screen">
+    <div name="home" className="w-full h-screen bg-[url('../assets/laptopSupport.jpg')]">
       {/* container */}
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         <div className="flex flex-col lg:flex-row lg:gap-4 text-4xl sm:text-6xl font-bold">
-          <h1 className="text-[#FFFFFF]">Hi there, I am</h1>
-          <h1 className="text-[#6C5DD3]">Aidan Rheeder</h1>
+
+          <h1 className="text-[#6C5DD3]">Full Range of ICT Services</h1>
         </div>
 
         <h2 className="text-4xl sm:text-6xl font-bold text-gray-400">
-          I am a <span>{text}</span>
+          We do <span>{text}</span>
           <Cursor cursorColor="#6C5DD3"></Cursor>
         </h2>
         <p className="text-gray-400 py-4 max-w-[700px]">
-          I am an agile React developer with a flair for crafting sleek, user-centric interfaces. Merging creativity
-          with code, I thrive on turning design visions into seamless, interactive experiences. Passionate about clean,
-          efficient solutions, I bring a dynamic approach to front-end development, ensuring your projects not only meet
-          but exceed expectations.
+          Thriving in a global and technologically advanced economy is no small feat. However, with the support of one
+          of Johannesburg's top IT companies, your business can gain a significant advantage. Downtime is more than just
+          a technical issue-it's a business killer.
+          <br></br>
+          <br></br>
+          With Supima Technologies, your team has the backing of a leading IT company that is ready to help keep systems
+          up and running and have hardware and software operating optimally. We are the IT company that gets and keeps
+          you connected. To learn more about our services and solutions, contact us today. We look forward to hearing
+          from you.
         </p>
         <div>
           <Link

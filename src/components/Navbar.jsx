@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaBars, FaGithub, FaInstagram, FaLinkedin, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 import supimaLogo from "../assets/supimaLogo.png";
+import supimaTech from "../assets/supimaTech.png";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -10,8 +11,12 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-20 z-30 flex justify-between items-center px-4 bg-[#1F2128] text-[#FFFFFF]">
       <div className="hover:cursor-pointer">
-        <Link to="home" smooth={true} duration={500}>
-          <img src={supimaLogo} alt="Initials Logo" width="90px"></img>
+        <Link className="hidden md:flex" to="home" smooth={true} duration={500}>
+          <img src={supimaTech} alt="Supima Logo" width="100px"></img>
+        </Link>
+
+        <Link className="flex md:hidden" to="home" smooth={true} duration={500}>
+          <img src={supimaLogo} alt="Supima Logo" width="50px"></img>
         </Link>
       </div>
 
