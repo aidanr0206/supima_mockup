@@ -1,15 +1,26 @@
 import React, { useState } from "react";
 import { FaBars, FaGithub, FaInstagram, FaLinkedin, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
+import { useScrollPosition } from "../hooks/useScrollPosition";
 import supimaLogo from "../assets/supimaLogo.png";
 import supimaTech from "../assets/supimaTech.png";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
+  const scrollPosition = useScrollPosition();
+
+  function classNames(...classes) {
+    return classes.filter(Boolean).join(" ");
+  }
 
   return (
-    <div className="fixed w-full h-20 z-30 flex justify-between items-center px-4 bg-[#1F2128] text-[#FFFFFF]">
+    <div
+      className={classNames(
+        scrollPosition > 100 ? "bg-[#1F2128]" : "bg-none",
+        "fixed w-full h-20 z-30 flex justify-between items-center transition-all px-4 text-[#FFFFFF]"
+      )}
+    >
       <div className="hover:cursor-pointer">
         <Link className="hidden md:flex" to="home" smooth={true} duration={500}>
           <img src={supimaTech} alt="Supima Logo" width="100px"></img>
@@ -23,27 +34,27 @@ const Navbar = () => {
       {/* menu */}
 
       <ul className="hidden md:flex">
-        <li className="hover:text-[#6C5DD3] duration-300">
+        <li className="hover:text-[#0871f5] duration-300">
           <Link to="home" smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li className="hover:text-[#6C5DD3] duration-300">
+        <li className="hover:text-[#0871f5] duration-300">
           <Link to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li className="hover:text-[#6C5DD3] duration-300">
-          <Link to="skills" smooth={true} duration={500}>
-            Skills
+        <li className="hover:text-[#0871f5] duration-300">
+          <Link to="services" smooth={true} duration={500}>
+            Services
           </Link>
         </li>
-        {/* <li className="hover:text-[#6C5DD3] duration-300">
+        {/* <li className="hover:text-[#0871f5] duration-300">
           <Link to="projects" smooth={true} duration={500}>
             Projects
           </Link>
         </li> */}
-        <li className="hover:text-[#6C5DD3] duration-300">
+        <li className="hover:text-[#0871f5] duration-300">
           <Link to="contact" smooth={true} duration={500}>
             Contact
           </Link>
@@ -74,8 +85,8 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
-            Skills
+          <Link onClick={handleClick} to="services" smooth={true} duration={500}>
+            Services
           </Link>
         </li>
         <li className="py-6 text-4xl">
@@ -97,18 +108,6 @@ const Navbar = () => {
               rel="noreferrer"
             >
               LinkedIn <FaLinkedin size={30}></FaLinkedin>
-            </a>
-          </li>
-
-          {/* GitHub */}
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-700">
-            <a
-              className="flex justify-between items-center w-full text-[#FFFFFF]"
-              href="https://github.com/aidanr0206"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub <FaGithub size={30}></FaGithub>
             </a>
           </li>
 

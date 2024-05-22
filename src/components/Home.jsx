@@ -20,19 +20,19 @@ const Home = () => {
   });
 
   return (
-    <div name="home" className="w-full h-screen bg-[url('../assets/laptopSupport.jpg')]">
+    <div name="home" className="w-full h-screen bg-home bg-cover bg-center bg-no-repeat">
       {/* container */}
-      <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
+      <div className="max-w-[1000px] mx-auto px-2 flex flex-col justify-center h-full">
         <div className="flex flex-col lg:flex-row lg:gap-4 text-4xl sm:text-6xl font-bold">
 
-          <h1 className="text-[#6C5DD3]">Full Range of ICT Services</h1>
+          <h1 className="text-[#0871f5]">Full Range of ICT Services</h1>
         </div>
 
-        <h2 className="text-4xl sm:text-6xl font-bold text-gray-400">
+        <h2 className="text-4xl sm:text-6xl font-bold text-gray-700">
           We do <span>{text}</span>
-          <Cursor cursorColor="#6C5DD3"></Cursor>
+          <Cursor cursorColor="#0871f5"></Cursor>
         </h2>
-        <p className="text-gray-400 py-4 max-w-[700px]">
+        <p className="text-gray-700 py-4 max-w-[700px]">
           Thriving in a global and technologically advanced economy is no small feat. However, with the support of one
           of Johannesburg's top IT companies, your business can gain a significant advantage. Downtime is more than just
           a technical issue-it's a business killer.
@@ -45,12 +45,12 @@ const Home = () => {
         </p>
         <div>
           <Link
-            className="text-white group border-2 px-6 py-3 my-2 max-w-fit flex items-center hover:bg-[#6C5DD3] hover:border-[#6C5DD3] duration-300 hover:cursor-pointer"
+            className="text-gray-700 group border-2 border-gray-700 px-6 py-3 my-2 max-w-fit flex items-center hover:bg-[#0871f5] hover:border-[#0871f5] duration-300 hover:cursor-pointer"
             to="contact"
             smooth={true}
             duration={500}
           >
-            Contact Me
+            Contact Us
             <span className="group-hover:rotate-90 duration-300">
               <HiArrowNarrowRight className="ml-3 "></HiArrowNarrowRight>
             </span>

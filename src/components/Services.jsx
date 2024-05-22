@@ -8,8 +8,9 @@ import cSharp from "../assets/cSharp.png";
 import tailwind from "../assets/tailwind.png";
 import sql from "../assets/sql.png";
 import { motion } from "framer-motion";
+import { FaWrench, FaPlus, FaNetworkWired, FaWifi, FaCloudDownloadAlt, FaCodeBranch, FaCartPlus, FaSolarPanel } from "react-icons/fa";
 
-const Skills = () => {
+const Services = () => {
   const fadeInAnimationVariants = {
     initial: {
       opacity: 0,
@@ -25,12 +26,12 @@ const Skills = () => {
   };
 
   return (
-    <div name="skills" className="w-full h-screen text-[#FFFFFF]">
+    <div name="services" className="w-full h-screen text-[#FFFFFF]">
       {/* container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
-          <p className="text-4xl font-bold inline border-b-4 border-[#6C5DD3]">Skills</p>
-          <p className="py-4">&lt; Here are areas I have experience in /&gt;</p>
+          <p className="text-4xl font-bold inline border-b-4 border-[#fe8606]">Services</p>
+          <p className="py-4">Some of the services we offer</p>
         </div>
 
         <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
@@ -39,12 +40,12 @@ const Skills = () => {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            whileHover={{scale: 1.08}}
+            whileHover={{ scale: 1.08 }}
             custom={0}
-            className="shadow-md shadow-gray-950 rounded-md pt-4 duration-500"
+            className="shadow-md shadow-gray-950 rounded-md pt-4 content-center duration-500"
           >
-            <img src={reactLogo} alt="React Logo" className="w-20 mx-auto"></img>
-            <p className="my-4">React.js</p>
+            <FaWrench size={50} color="#fe8606" className="w-20 mx-auto"></FaWrench>
+            <p className="my-4">IT Repairs</p>
           </motion.div>
 
           <motion.div
@@ -52,12 +53,12 @@ const Skills = () => {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            whileHover={{scale: 1.08}}
+            whileHover={{ scale: 1.08 }}
             custom={1}
-            className="shadow-md shadow-gray-950 rounded-md pt-4 duration-500"
+            className="shadow-md shadow-gray-950 rounded-md pt-4 content-center duration-500"
           >
-            <img src={nativeBase} alt="NativeBase Logo" className="w-20 mx-auto"></img>
-            <p className="my-4">NativeBase</p>
+            <FaPlus size={50} color="#fe8606" className="w-20 mx-auto"></FaPlus>
+            <p className="my-4">IT Support</p>
           </motion.div>
 
           <motion.div
@@ -65,12 +66,12 @@ const Skills = () => {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            whileHover={{scale: 1.08}}
+            whileHover={{ scale: 1.08 }}
             custom={2}
-            className="shadow-md shadow-gray-950 rounded-md pt-4 duration-500"
+            className="shadow-md shadow-gray-950 rounded-md pt-4 content-center duration-500"
           >
-            <img src={tailwind} alt="Tailwind Logo" className="w-20 mx-auto"></img>
-            <p className="my-4">Tailwind</p>
+            <FaWifi size={50} color="#fe8606" className="w-20 mx-auto"></FaWifi>
+            <p className="my-4">Internet Services</p>
           </motion.div>
 
           <motion.div
@@ -78,12 +79,12 @@ const Skills = () => {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            whileHover={{scale: 1.08}}
+            whileHover={{ scale: 1.08 }}
             custom={3}
-            className="shadow-md shadow-gray-950 rounded-md pt-4 duration-500"
+            className="shadow-md shadow-gray-950 rounded-md pt-4 content-center duration-500"
           >
-            <img src={cSharp} alt="c# Logo" className="w-20 mx-auto"></img>
-            <p className="my-4">C#</p>
+            <FaNetworkWired size={50} color="#fe8606" className="w-20 mx-auto"></FaNetworkWired>
+            <p className="my-4">Network Cabling</p>
           </motion.div>
 
           <motion.div
@@ -91,12 +92,12 @@ const Skills = () => {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            whileHover={{scale: 1.08}}
+            whileHover={{ scale: 1.08 }}
             custom={4}
-            className="shadow-md shadow-gray-950 rounded-md pt-4 duration-500"
+            className="shadow-md shadow-gray-950 rounded-md pt-4 content-center duration-500"
           >
-            <img src={javascript} alt="JS Logo" className="w-20 mx-auto"></img>
-            <p className="my-4">JavaScript</p>
+            <FaCloudDownloadAlt size={50} color="#fe8606" className="w-20 mx-auto"></FaCloudDownloadAlt>
+            <p className="my-4">Cloud Servies</p>
           </motion.div>
 
           <motion.div
@@ -104,12 +105,12 @@ const Skills = () => {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            whileHover={{scale: 1.08}}
+            whileHover={{ scale: 1.08 }}
             custom={5}
-            className="shadow-md shadow-gray-950 rounded-md pt-4 duration-500"
+            className="shadow-md shadow-gray-950 rounded-md pt-4 content-center duration-500"
           >
-            <img src={html} alt="HTML Logo" className="w-20 mx-auto"></img>
-            <p className="my-4">HTML</p>
+            <FaCodeBranch size={50} color="#fe8606" className="w-20 mx-auto"></FaCodeBranch>
+            <p className="my-4">IT Solutions</p>
           </motion.div>
 
           <motion.div
@@ -117,12 +118,12 @@ const Skills = () => {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            whileHover={{scale: 1.08}}
+            whileHover={{ scale: 1.08 }}
             custom={6}
-            className="shadow-md shadow-gray-950 rounded-md pt-4 duration-500"
+            className="shadow-md shadow-gray-950 rounded-md pt-4 content-center duration-500"
           >
-            <img src={css} alt="css Logo" className="w-20 mx-auto"></img>
-            <p className="my-4">css</p>
+            <FaCartPlus size={50} color="#fe8606" className="w-20 mx-auto"></FaCartPlus>
+            <p className="my-4">IT Products</p>
           </motion.div>
 
           <motion.div
@@ -130,12 +131,12 @@ const Skills = () => {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            whileHover={{scale: 1.08}}
+            whileHover={{ scale: 1.08 }}
             custom={7}
-            className="shadow-md shadow-gray-950 rounded-md pt-4 duration-500"
+            className="shadow-md shadow-gray-950 rounded-md pt-4 content-center duration-500"
           >
-            <img src={sql} alt="SQL Logo" className="w-20 mx-auto"></img>
-            <p className="my-4">SQL</p>
+            <FaSolarPanel size={50} color="#fe8606" className="w-20 mx-auto"></FaSolarPanel>
+            <p className="my-4">Power Solutions</p>
           </motion.div>
         </div>
       </div>
@@ -143,4 +144,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default Services;

@@ -3,7 +3,7 @@ import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
-import Skills from "./components/Skills";
+import Services from "./components/Services";
 
 function App() {
   return (
@@ -14,12 +14,12 @@ function App() {
         <Home></Home>
       </section>
 
-      <section id="about" className="snap-center">
+      {/* <section id="about" className="snap-center">
         <About></About>
-      </section>
+      </section> */}
 
-      <section id="skills" className="snap-center">
-        <Skills></Skills>
+      <section id="services" className="snap-center">
+        <Services></Services>
       </section>
 
       {/* <section id="projects" className="snap-center">

@@ -11,7 +11,7 @@ const Contact = () => {
         className="flex flex-col max-w-[600px] w-full"
       >
         <div className="pb-4 text-[#FFFFFF]">
-          <p className="text-4xl font-bold inline border-b-4 border-[#6C5DD3]">Contact</p>
+          <p className="text-4xl font-bold inline border-b-4 border-[#0871f5]">Contact</p>
           <p className="py-4">&lt; Submit the form below or contact me through my socials /&gt;</p>
         </div>
 
@@ -21,7 +21,7 @@ const Contact = () => {
             whileInView={{ width: "auto" }}
             transition={{ type: "spring", bounce: 0.2, duration: 1.2, delay: 0.05 }}
             viewport={{ once: true }}
-            className="bg-[#252731] placeholder-gray-500 focus:text-[#6C5DD3] p-2"
+            className="bg-[#252731] placeholder-gray-500 focus:text-[#0871f5] p-2"
             type="text"
             placeholder="Name"
             name="name"
@@ -32,7 +32,7 @@ const Contact = () => {
             whileInView={{ width: "auto" }}
             transition={{ type: "spring", bounce: 0.2, duration: 1.2, delay: 0.1 }}
             viewport={{ once: true }}
-            className="bg-[#252731] placeholder-gray-500 focus:text-[#6C5DD3] p-2"
+            className="bg-[#252731] placeholder-gray-500 focus:text-[#0871f5] p-2"
             type="email"
             placeholder="Email"
             name="email"
@@ -43,14 +43,14 @@ const Contact = () => {
             whileInView={{ width: "auto" }}
             transition={{ type: "spring", bounce: 0.2, duration: 1.2, delay: 0.15 }}
             viewport={{ once: true }}
-            className="bg-[#252731] placeholder-gray-500 focus:text-[#6C5DD3] p-2"
+            className="bg-[#252731] placeholder-gray-500 focus:text-[#0871f5] p-2"
             placeholder="Message"
             name="message"
             rows={10}
           ></motion.textarea>
         </div>
 
-        <button className="text-white border-2 hover:shadow-[inset_13rem_0_0_0] hover:shadow-[#6C5DD3] hover:[box-shadow:] hover:border-[#6C5DD3] duration-[200ms,600ms] transition-[color,box-shadow,border] px-4 py-3 my-8 mx-auto flex items-center">
+        <button className="text-white border-2 hover:shadow-[inset_13rem_0_0_0] hover:shadow-[#0871f5] hover:[box-shadow:] hover:border-[#0871f5] duration-[200ms,600ms] transition-[color,box-shadow,border] px-4 py-3 my-8 mx-auto flex items-center">
           Message
         </button>
       </form>

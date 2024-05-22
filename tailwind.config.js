@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        home: "url('/src/assets/armsLaptop.jpg')",
+      },
+    },
   },
   plugins: [],
-}
+};
