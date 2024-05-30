@@ -1,24 +1,16 @@
 {
   "files": {
-    "main.css": "/supima_mockup/static/css/main.74523e86.css",
-    "main.js": "/supima_mockup/static/js/main.be2f3d43.js",
+    "main.css": "/supima_mockup/static/css/main.22421b3a.css",
+    "main.js": "/supima_mockup/static/js/main.4aaf7da1.js",
     "static/media/armsLaptop.jpg": "/supima_mockup/static/media/armsLaptop.51b7707259facae2c31e.jpg",
     "static/media/supimaTech.png": "/supima_mockup/static/media/supimaTech.fe45c37b503b0f2a72ee.png",
-    "static/media/sql.png": "/supima_mockup/static/media/sql.513ccf3828db78056d54.png",
     "static/media/supimaLogo.png": "/supima_mockup/static/media/supimaLogo.23cfd913f40083ada326.png",
-    "static/media/nativeBase.png": "/supima_mockup/static/media/nativeBase.f2ccd3396740ba7c00f1.png",
-    "static/media/reactLogo.png": "/supima_mockup/static/media/reactLogo.0cf951a69d8e58f83f9d.png",
-    "static/media/cSharp.png": "/supima_mockup/static/media/cSharp.af0ae0bef06cab77d7a3.png",
-    "static/media/html.png": "/supima_mockup/static/media/html.2ba4fabc69a89a8f71e6.png",
-    "static/media/tailwind.png": "/supima_mockup/static/media/tailwind.e47ac876b8d4d0bba47a.png",
-    "static/media/css.png": "/supima_mockup/static/media/css.69a82c2d9e45c933a9cb.png",
-    "static/media/javascript.png": "/supima_mockup/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/supima_mockup/index.html",
-    "main.74523e86.css.map": "/supima_mockup/static/css/main.74523e86.css.map",
-    "main.be2f3d43.js.map": "/supima_mockup/static/js/main.be2f3d43.js.map"
+    "main.22421b3a.css.map": "/supima_mockup/static/css/main.22421b3a.css.map",
+    "main.4aaf7da1.js.map": "/supima_mockup/static/js/main.4aaf7da1.js.map"
   },
   "entrypoints": [
-    "static/css/main.74523e86.css",
-    "static/js/main.be2f3d43.js"
+    "static/css/main.22421b3a.css",
+    "static/js/main.4aaf7da1.js"
   ]
 }
