@@ -3,7 +3,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div name="contact" className="w-full h-full flex justify-center items-center p-4">
+    <div name="contact" className="w-full h-full flex justify-center items-center p-4 pt-12">
       {/* container */}
       <form
         method="POST"
@@ -12,7 +12,7 @@ const Contact = () => {
       >
         <div className="pb-4 text-[#FFFFFF]">
           <p className="text-4xl font-bold inline border-b-4 border-[#0871f5]">Contact</p>
-          <p className="py-4">&lt; Submit the form below or contact me through my socials /&gt;</p>
+          <p className="py-4">Submit the form below or contact us through our socials</p>
         </div>
 
         <div className="flex flex-col gap-4 text-[#FFFFFF] ">
