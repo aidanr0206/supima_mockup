@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { FaBars, FaGithub, FaInstagram, FaLinkedin, FaTimes } from "react-icons/fa";
+import { FaBars, FaInstagram, FaLinkedin, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
-import { useScrollPosition } from "../hooks/useScrollPosition";
 import supimaLogo from "../assets/supimaLogo.png";
 import supimaTech from "../assets/supimaTech.png";
+import { useScrollPosition } from "../hooks/useScrollPosition";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <div
       className={classNames(
-        scrollPosition > 100 ? "bg-[#1F2128]" : "bg-none",
+        scrollPosition > 100 ? "bg-[#191919]" : "bg-none",
         "fixed w-full h-20 z-30 flex justify-between items-center transition-all px-4 text-[#FFFFFF]"
       )}
     >
@@ -71,7 +71,7 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#1F2128] flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 w-full h-screen bg-[#191919] flex flex-col justify-center items-center"
         }
       >
         <li className="py-6 text-4xl">

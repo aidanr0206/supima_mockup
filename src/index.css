@@ -2,14 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
 @layer base {
-    body {
-        @apply font-[Raleway];
+  body {
+    @apply font-[Raleway];
+  }
+  li {
+    @apply px-4;
+    @apply cursor-pointer;
+  }
+  .custom-hover-class {
+    @apply transition-transform duration-200 ease-in-out; /* Smooth scaling transition */
+  }
+  .custom-hover-class:hover {
+    transform: scale(0.9);
+    box-shadow: 5px 5px 8px rgba(222, 222, 222, 0.362), 10px 10px 8px rgba(152, 133, 133, 0.392),
+      15px 15px 8px rgba(139, 154, 139, 0.303);
+  }
+  @keyframes slide {
+    from {
+      transform: translateX(0);
     }
-    li {
-        @apply px-4;
-        @apply cursor-pointer;
+    to {
+      transform: translateX(-50%);
     }
+  }
+
+  .custom-animation-class {
+    animation: slide 20s linear infinite;
+  }
+
+  .custom-animation-class:hover {
+    animation-play-state: paused;
+  }
 }

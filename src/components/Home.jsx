@@ -1,10 +1,10 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
-import { Cursor, Typewriter, useTypewriter } from "react-simple-typewriter";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 const Home = () => {
-  const [text, count] = useTypewriter({
+  const [text] = useTypewriter({
     words: [
       "IT Repairs",
       "Internet Services",
@@ -24,7 +24,6 @@ const Home = () => {
       {/* container */}
       <div className="max-w-[1000px] mx-auto px-2 flex flex-col justify-center h-full">
         <div className="flex flex-col lg:flex-row lg:gap-4 text-4xl sm:text-6xl font-bold">
-
           <h1 className="text-[#0871f5]">Full Range of ICT Services</h1>
         </div>
 

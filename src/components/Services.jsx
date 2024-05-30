@@ -1,14 +1,15 @@
-import React from "react";
-import css from "../assets/css.png";
-import html from "../assets/html.png";
-import javascript from "../assets/javascript.png";
-import nativeBase from "../assets/nativeBase.png";
-import reactLogo from "../assets/reactLogo.png";
-import cSharp from "../assets/cSharp.png";
-import tailwind from "../assets/tailwind.png";
-import sql from "../assets/sql.png";
 import { motion } from "framer-motion";
-import { FaWrench, FaPlus, FaNetworkWired, FaWifi, FaCloudDownloadAlt, FaCodeBranch, FaCartPlus, FaSolarPanel } from "react-icons/fa";
+import React from "react";
+import {
+  FaCartPlus,
+  FaCloudDownloadAlt,
+  FaCodeBranch,
+  FaNetworkWired,
+  FaPlus,
+  FaSolarPanel,
+  FaWifi,
+  FaWrench,
+} from "react-icons/fa";
 
 const Services = () => {
   const fadeInAnimationVariants = {
@@ -26,11 +27,11 @@ const Services = () => {
   };
 
   return (
-    <div name="services" className="w-full h-screen text-[#FFFFFF]">
+    <div name="services" className="w-full h-screen text-gray-700 bg-white">
       {/* container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
-          <p className="text-4xl font-bold inline border-b-4 border-[#fe8606]">Services</p>
+          <p className="text-4xl font-bold inline border-b-4 border-[#0871f5]">Services</p>
           <p className="py-4">Some of the services we offer</p>
         </div>
 
@@ -42,7 +43,7 @@ const Services = () => {
             viewport={{ once: true }}
             whileHover={{ scale: 1.08 }}
             custom={0}
-            className="shadow-md shadow-gray-950 rounded-md pt-4 content-center duration-500"
+            className="shadow-md shadow-gray-700 rounded-md pt-4 content-center duration-500"
           >
             <FaWrench size={50} color="#fe8606" className="w-20 mx-auto"></FaWrench>
             <p className="my-4">IT Repairs</p>
@@ -55,7 +56,7 @@ const Services = () => {
             viewport={{ once: true }}
             whileHover={{ scale: 1.08 }}
             custom={1}
-            className="shadow-md shadow-gray-950 rounded-md pt-4 content-center duration-500"
+            className="shadow-md shadow-gray-700 rounded-md pt-4 content-center duration-500"
           >
             <FaPlus size={50} color="#fe8606" className="w-20 mx-auto"></FaPlus>
             <p className="my-4">IT Support</p>
@@ -68,7 +69,7 @@ const Services = () => {
             viewport={{ once: true }}
             whileHover={{ scale: 1.08 }}
             custom={2}
-            className="shadow-md shadow-gray-950 rounded-md pt-4 content-center duration-500"
+            className="shadow-md shadow-gray-700 rounded-md pt-4 content-center duration-500"
           >
             <FaWifi size={50} color="#fe8606" className="w-20 mx-auto"></FaWifi>
             <p className="my-4">Internet Services</p>
@@ -81,7 +82,7 @@ const Services = () => {
             viewport={{ once: true }}
             whileHover={{ scale: 1.08 }}
             custom={3}
-            className="shadow-md shadow-gray-950 rounded-md pt-4 content-center duration-500"
+            className="shadow-md shadow-gray-700 rounded-md pt-4 content-center duration-500"
           >
             <FaNetworkWired size={50} color="#fe8606" className="w-20 mx-auto"></FaNetworkWired>
             <p className="my-4">Network Cabling</p>
@@ -94,7 +95,7 @@ const Services = () => {
             viewport={{ once: true }}
             whileHover={{ scale: 1.08 }}
             custom={4}
-            className="shadow-md shadow-gray-950 rounded-md pt-4 content-center duration-500"
+            className="shadow-md shadow-gray-700 rounded-md pt-4 content-center duration-500"
           >
             <FaCloudDownloadAlt size={50} color="#fe8606" className="w-20 mx-auto"></FaCloudDownloadAlt>
             <p className="my-4">Cloud Servies</p>
@@ -107,7 +108,7 @@ const Services = () => {
             viewport={{ once: true }}
             whileHover={{ scale: 1.08 }}
             custom={5}
-            className="shadow-md shadow-gray-950 rounded-md pt-4 content-center duration-500"
+            className="shadow-md shadow-gray-700 rounded-md pt-4 content-center duration-500"
           >
             <FaCodeBranch size={50} color="#fe8606" className="w-20 mx-auto"></FaCodeBranch>
             <p className="my-4">IT Solutions</p>
@@ -120,7 +121,7 @@ const Services = () => {
             viewport={{ once: true }}
             whileHover={{ scale: 1.08 }}
             custom={6}
-            className="shadow-md shadow-gray-950 rounded-md pt-4 content-center duration-500"
+            className="shadow-md shadow-gray-700 rounded-md pt-4 content-center duration-500"
           >
             <FaCartPlus size={50} color="#fe8606" className="w-20 mx-auto"></FaCartPlus>
             <p className="my-4">IT Products</p>
@@ -133,7 +134,7 @@ const Services = () => {
             viewport={{ once: true }}
             whileHover={{ scale: 1.08 }}
             custom={7}
-            className="shadow-md shadow-gray-950 rounded-md pt-4 content-center duration-500"
+            className="shadow-md shadow-gray-700 rounded-md pt-4 content-center duration-500"
           >
             <FaSolarPanel size={50} color="#fe8606" className="w-20 mx-auto"></FaSolarPanel>
             <p className="my-4">Power Solutions</p>

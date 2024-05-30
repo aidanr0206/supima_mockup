@@ -4,6 +4,8 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Services from "./components/Services";
+import Partners from "./components/Partners";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -14,12 +16,20 @@ function App() {
         <Home></Home>
       </section>
 
+      <section id="partners" className="snap-center">
+        <Partners></Partners>
+      </section>
+
       {/* <section id="about" className="snap-center">
         <About></About>
       </section> */}
 
       <section id="services" className="snap-center">
         <Services></Services>
+      </section>
+
+      <section id="partners" className="snap-center">
+        <Testimonials></Testimonials>
       </section>
 
       {/* <section id="projects" className="snap-center">
