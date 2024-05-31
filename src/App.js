@@ -28,7 +28,7 @@ function App() {
         <Services></Services>
       </section>
 
-      <section id="partners" className="snap-center">
+      <section id="testimonials" className="snap-center">
         <Testimonials></Testimonials>
       </section>
 

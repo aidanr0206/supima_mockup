@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaBars, FaInstagram, FaLinkedin, FaTimes } from "react-icons/fa";
+import { FaBars, FaFacebook, FaInstagram, FaLinkedin, FaTimes, FaYoutube } from "react-icons/fa";
 import { Link } from "react-scroll";
 import supimaLogo from "../assets/supimaLogo.png";
 import supimaTech from "../assets/supimaTech.png";
@@ -40,20 +40,15 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="hover:text-[#0871f5] duration-300">
-          <Link to="about" smooth={true} duration={500}>
-            About
-          </Link>
-        </li>
-        <li className="hover:text-[#0871f5] duration-300">
           <Link to="services" smooth={true} duration={500}>
             Services
           </Link>
         </li>
-        {/* <li className="hover:text-[#0871f5] duration-300">
-          <Link to="projects" smooth={true} duration={500}>
-            Projects
+        <li className="hover:text-[#0871f5] duration-300">
+          <Link to="testimonials" smooth={true} duration={500}>
+            Testimonials
           </Link>
-        </li> */}
+        </li>
         <li className="hover:text-[#0871f5] duration-300">
           <Link to="contact" smooth={true} duration={500}>
             Contact
@@ -75,22 +70,22 @@ const Navbar = () => {
         }
       >
         <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="home" smooth={true} duration={400}>
+          <Link className="hover:text-[#0871f5]" onClick={handleClick} to="home" smooth={true} duration={400}>
             Home
           </Link>
         </li>
         <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="about" smooth={true} duration={500}>
-            About
-          </Link>
-        </li>
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="services" smooth={true} duration={500}>
+          <Link className="hover:text-[#0871f5]" onClick={handleClick} to="services" smooth={true} duration={500}>
             Services
           </Link>
         </li>
         <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
+          <Link className="hover:text-[#0871f5]" onClick={handleClick} to="testimonials" smooth={true} duration={500}>
+            Testimonials
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
+          <Link className="hover:text-[#0871f5]" onClick={handleClick} to="contact" smooth={true} duration={500}>
             Contact
           </Link>
         </li>
@@ -103,7 +98,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
             <a
               className="flex justify-between items-center w-full text-[#FFFFFF]"
-              href="//www.linkedin.com/in/aidan-rheeder-baa95126b"
+              href="//www.linkedin.com/company/supima-technologies/?originalSubdomain=za"
               target="_blank"
               rel="noreferrer"
             >
@@ -111,11 +106,35 @@ const Navbar = () => {
             </a>
           </li>
 
+          {/* YouTube */}
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#FF0000]">
+            <a
+              className="flex justify-between items-center w-full text-[#FFFFFF]"
+              href="//www.youtube.com/channel/UCdCnR-aWDQdFapLNAc2EdJA"
+              target="_blank"
+              rel="noreferrer"
+            >
+              YouTube <FaYoutube size={30}></FaYoutube>
+            </a>
+          </li>
+
+          {/* Facebook */}
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#4267B2]">
+            <a
+              className="flex justify-between items-center w-full text-[#FFFFFF]"
+              href="//www.facebook.com/Supimatech/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Facebook <FaFacebook size={30}></FaFacebook>
+            </a>
+          </li>
+
           {/* Instagram */}
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#d62976]">
             <a
               className="flex justify-between items-center w-full text-[#FFFFFF]"
-              href="//www.instagram.com/aidan_rheeder/"
+              href="//www.instagram.com/supima.technologies/?img_index=1"
               target="_blank"
               rel="noreferrer"
             >

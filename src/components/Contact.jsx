@@ -21,7 +21,7 @@ const Contact = () => {
             whileInView={{ width: "auto" }}
             transition={{ type: "spring", bounce: 0.2, duration: 1.2, delay: 0.05 }}
             viewport={{ once: true }}
-            className="bg-[#252731] placeholder-gray-500 focus:text-[#0871f5] p-2"
+            className="bg-[#252731] placeholder-gray-500 focus:text-[#fe8606] p-2"
             type="text"
             placeholder="Name"
             name="name"
@@ -32,7 +32,7 @@ const Contact = () => {
             whileInView={{ width: "auto" }}
             transition={{ type: "spring", bounce: 0.2, duration: 1.2, delay: 0.1 }}
             viewport={{ once: true }}
-            className="bg-[#252731] placeholder-gray-500 focus:text-[#0871f5] p-2"
+            className="bg-[#252731] placeholder-gray-500 focus:text-[#fe8606] p-2"
             type="email"
             placeholder="Email"
             name="email"
@@ -43,7 +43,7 @@ const Contact = () => {
             whileInView={{ width: "auto" }}
             transition={{ type: "spring", bounce: 0.2, duration: 1.2, delay: 0.15 }}
             viewport={{ once: true }}
-            className="bg-[#252731] placeholder-gray-500 focus:text-[#0871f5] p-2"
+            className="bg-[#252731] placeholder-gray-500 focus:text-[#fe8606] p-2"
             placeholder="Message"
             name="message"
             rows={10}
