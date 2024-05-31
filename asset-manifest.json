@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/supima_mockup/static/css/main.22421b3a.css",
-    "main.js": "/supima_mockup/static/js/main.4aaf7da1.js",
+    "main.css": "/supima_mockup/static/css/main.ad06a0d1.css",
+    "main.js": "/supima_mockup/static/js/main.9fa21a89.js",
     "static/media/armsLaptop.jpg": "/supima_mockup/static/media/armsLaptop.51b7707259facae2c31e.jpg",
     "static/media/supimaTech.png": "/supima_mockup/static/media/supimaTech.fe45c37b503b0f2a72ee.png",
     "static/media/supimaLogo.png": "/supima_mockup/static/media/supimaLogo.23cfd913f40083ada326.png",
     "index.html": "/supima_mockup/index.html",
-    "main.22421b3a.css.map": "/supima_mockup/static/css/main.22421b3a.css.map",
-    "main.4aaf7da1.js.map": "/supima_mockup/static/js/main.4aaf7da1.js.map"
+    "main.ad06a0d1.css.map": "/supima_mockup/static/css/main.ad06a0d1.css.map",
+    "main.9fa21a89.js.map": "/supima_mockup/static/js/main.9fa21a89.js.map"
   },
   "entrypoints": [
-    "static/css/main.22421b3a.css",
-    "static/js/main.4aaf7da1.js"
+    "static/css/main.ad06a0d1.css",
+    "static/js/main.9fa21a89.js"
   ]
 }
